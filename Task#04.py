@@ -26,14 +26,15 @@ def Rock():
     comp = random.choice(comp_value)
     if comp == "Paper":
         result = "Computer Win!"
-        l4.config(background="red")#for changing the background color of label
+        l4.config(background="red")
         comp_score=comp_score+1
     elif comp == "Scissor":
         result = "You Win!"
-        l4.config(background="green")#for changing the background color of label
+        l4.config(background="green")
         user_score=user_score+1
     else:
         result = "Game Draw"
+        l4.config(background="#E0FFFF")
     l4.config(text=result)
     l3.config(text=user_score)
     l6.config(text=comp_score)
@@ -47,14 +48,15 @@ def Paper():
     comp = random.choice(comp_value)
     if comp == "Scissor":
         result = "Computer Win!"
-        l4.config(background="red")#for changing the background color of label
+        l4.config(background="red")
         comp_score=comp_score+1
     elif comp == "Rock":
         result = "You Win!"
-        l4.config(background="green")#for changing the background color of label
+        l4.config(background="green")
         user_score=user_score+1
     else:
         result = "Game Draw"
+        l4.config(background="#E0FFFF")
     l4.config(text=result)
     l3.config(text=user_score)
     l6.config(text=comp_score)
@@ -68,14 +70,15 @@ def Scissor():
     comp = random.choice(comp_value)
     if comp == "Rock":
         result = "Computer Win!"
-        l4.config(background="red")#for changing the background color of label
+        l4.config(background="red")
         comp_score=comp_score+1
     elif comp == "Paper":
         result = "You Win!"
-        l4.config(background="green")#for changing the background color of label
+        l4.config(background="green")
         user_score=user_score+1
     else:
         result = "Game Draw"
+        l4.config(background="#E0FFFF")
 
     l4.config(text=result)
     l3.config(text=user_score)
@@ -115,7 +118,7 @@ l8=Label(m,text="V",bg="#E0FFFF",fg="#68228B",font=("bold",18)).place(x=230,y=37
 l9=Label(m,text="Computer",bg="#E0FFFF",fg="#68228B",font=("bold",18))
 l9.place(x=280,y=370)
 # Result Entry
-l4 = Label(m,text="Play your move",bg="#E0FFFF", fg="#68228B", font=("bold", 18))
+l4 = Label(m,text="Play your move",bg="#E0FFFF", fg="#68228B", width=13,font=("bold", 18))
 l4.place(x=170, y=450)
 
 # Reset Button
